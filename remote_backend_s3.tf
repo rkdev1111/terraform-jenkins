@@ -1,3 +1,4 @@
+/*
 terraform {
   backend "s3" {
     bucket = "dev-proj-1-jenkins-remote-state-bucket-123456"
@@ -5,3 +6,4 @@ terraform {
     region = "eu-west-1"
   }
 }
+*/

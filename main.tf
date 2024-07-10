@@ -3,7 +3,7 @@ module "networking" {
   vpc_cidr             = var.vpc_cidr
   vpc_name             = var.vpc_name
   cidr_public_subnet   = var.cidr_public_subnet
-  eu_availability_zone = var.eu_availability_zone
+  us_availability_zone = var.us_availability_zone
   cidr_private_subnet  = var.cidr_private_subnet
 }
 
@@ -13,7 +13,7 @@ module "security_group" {
   vpc_id              = module.networking.dev_proj_1_vpc_id
   ec2_jenkins_sg_name = "Allow port 8080 for jenkins"
 }
-
+/*
 module "jenkins" {
   source                    = "./jenkins"
   ami_id                    = var.ec2_ami_id
@@ -66,3 +66,4 @@ module "aws_ceritification_manager" {
   domain_name    = "jenkins.jhooq.org"
   hosted_zone_id = module.hosted_zone.hosted_zone_id
 }
+*/
